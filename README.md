@@ -8,7 +8,7 @@ This is so we don't use the API credits given to us by the API provider.
 
 We used the following public APIs
     - Coinmarketcap: for the current prices of the cryptocurrencies
-    - CurrencyConverterApi: for exchange rate between Dollar and Naira
+    - ApiLayer Currency Data Api: for exchange rate between Dollar and Naira
 
 We Used the following packages
     - Riverpod : for state managemet

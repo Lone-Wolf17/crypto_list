@@ -6,14 +6,14 @@ import 'package:crypto_list/models/coin_model.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final cryptoRepositoryProvider = Provider((_) => CryptoRepo(Dio()));
+final cryptoRepositoryProvider = Provider((_) => CryptoRepository(Dio()));
 
-class CryptoRepo {
+class CryptoRepository {
   final Dio dio;
 
-  CryptoRepo(this.dio);
+  CryptoRepository(this.dio);
 
-  Future<List<CoinModel>> getPrices() async {
+  Future<List<CoinModel>> getCoinPrices() async {
     final headers = {
       'X-CMC_PRO_API_KEY': Config.cmcApikey,
     };
